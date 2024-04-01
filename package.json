@@ -4,7 +4,8 @@
   "description": "## Features",
   "main": "index.js",
   "scripts": {
-    "tailwind": "npx tailwindcss -i assets/css/tailwind/base.css -o assets/css/tailwind.css"
+    "dev": "npx tailwindcss -i assets/css/tailwind/base.dev.css -o assets/css/tailwind.css",
+    "prod": "npx tailwindcss -i assets/css/tailwind/base.css -o assets/css/tailwind.css"
   },
   "keywords": [],
   "author": "Nayan Seth",

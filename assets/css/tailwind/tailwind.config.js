@@ -22,13 +22,6 @@ module.exports = {
   ],
   corePlugins: {
     preflight: true,
-  },
-  safelist: [
-  	{
-    	pattern: /.*/,
-  	},
-    'top-0',
-    'max-lg:top-0',
-  ]
+  }
 }
 

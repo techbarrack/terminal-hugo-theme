@@ -1,11 +1,23 @@
-<nav class="flex flex-row items-center justify-between w-full">
-  <div class="flex flex-col gap-1">
-    <a href="{{ .Site.BaseURL }}" class="text-5xl font-bold hover:text-sky-400 whitespace-nowrap">Nayan Seth</a>
-    <p>Think Good! Do Good!</p>
-  </div>
+<!-- Homepage Navigation on Smaller Screens-->
+<!-- Ensure that Hamburger is on the right side when on homepage. Earlier we had justify between as we had title on left and hamburger on right. But on homepage, we only have the hamburger. Hence, using justify-end -->
+{{ if eq .Permalink .Site.BaseURL }}
+  <nav
+    class="flex flex-row items-center w-full justify-end">
+{{ else }}
+  <nav
+    class="flex flex-row items-center w-full justify-between">
+{{ end }}
+
+  <!-- Do not include title of the website in navigation for homepage -->
+  {{ if ne .Permalink .Site.BaseURL }}
+    <div class="flex flex-col gap-1">
+      <a href="{{ .Site.BaseURL }}" class="text-4xl font-bold hover:text-sky-400 whitespace-nowrap">Nayan Seth</a>
+      <p>Think Good! Do Good!</p>
+    </div>
+  {{ end }}
 
   <div class="dropdown-menu flex flex-row absolute max-lg:w-full max-lg:items-center max-lg:justify-center max-lg:-top-full lg:static max-lg:bg-slate-900 max-lg:h-screen max-lg:left-0">
-    <ul class="flex flex-col lg:flex-row gap-10">
+    <ul class="flex flex-col lg:flex-row gap-2">
       {{ partial "default_menu.html" . }}
     </ul>
   </div>

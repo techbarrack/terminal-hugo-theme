@@ -1,3 +1,10 @@
-<header class="flex flex-row py-4">
-  {{ partial "menu.html" . }}
+<!-- Homepage Navigation on Smaller Screens-->
+{{ if eq .Permalink .Site.BaseURL }}
+  <header class="flex flex-row py-4 sm:hidden visible">
+{{ else }}
+  <header class="flex flex-row py-4" >
+{{ end }}
+  
+{{ partial "menu.html" . }}
+
 </header>
