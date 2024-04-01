@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="{{ or site.Language.LanguageCode site.Language.Lang }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}">
+
+<head>
+  {{ partial "head.html" . }}
+</head>
+
+<body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
+  <div class="container mx-auto flex flex-col px-4 lg:w-8/12">
+    {{ block "main" . }}{{ end }}
+  </div>
+  {{ partialCached "head/js.html" . }}
+  <script id="dsq-count-scr" src="//nayanseth.disqus.com/count.js" async></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  <!-- Set the Data for Taxonomy -->
+  {{ $taxonomy := .Site.Taxonomies.tags }}
+  {{ .Scratch.Set "taxonomy" $taxonomy }}
+  
+  {{ partial "taxonomy.html" . }}
+
+  {{ partial "footer_bottom.html" .}}
+{{ end }}
+

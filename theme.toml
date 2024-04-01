@@ -1,0 +1,19 @@
+name = 'Terminal'
+license = 'MIT'
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = 'Theme description'
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/nayanseth/terminal'
+
+# If you have a running demo of the theme
+demosite = 'https://nayanseth.com'
+
+# Taxonomy terms
+tags = ['blog', 'personal', 'terminal']
+features = ['search', 'markdown']
+
+# If the theme has a single author
+[author]
+  name = 'Nayan Seth'
+  homepage = 'https://nayanseth.com'

@@ -1,0 +1,5 @@
+<p class="py-1">🏷️</p>
+{{ range .Params.tags }}
+  <a href='{{ "/tags/" | relLangURL }}{{ . | urlize }}'
+  class="border border-sky-400 p-1 hover:bg-sky-400 focus:text-sky-400 text-center">{{ . }}</a>
+{{ end }}

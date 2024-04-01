@@ -1,0 +1,5 @@
+{{ range .Site.Menus.main }}
+  <li class="font-bold border border-sky-400 p-2 hover:bg-sky-400 focus:text-sky-400 text-center">
+    <a href="{{ .URL }}">{{ .Name }}</a>
+  </li>
+{{ end }}

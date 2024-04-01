@@ -1,0 +1,12 @@
+{{- $js := resources.Match "js/*.js" -}}
+{{- if $js }}
+  {{- range $js }}
+    {{- if eq hugo.Environment "development" }}
+      <script type="text/javascript" src="{{ .RelPermalink }}"></script>
+    {{- else }}
+      {{- with . | minify | fingerprint }}
+        <script type="text/javascript" src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+      {{- end }}
+    {{- end }}
+  {{- end }}
+{{- end }}

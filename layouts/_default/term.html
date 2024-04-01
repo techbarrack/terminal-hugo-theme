@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ partial "header.html" . }}
+
+<div class="flex flex-row justify-between pt-8">
+  <!-- Main Content-->
+  <div class="flex flex-col w-full gap-4">
+    {{ $blogPages := .Pages }}
+    {{ .Scratch.Set "blogPages" $blogPages }}
+    {{ partial "pagination.html" . }}
+
+    
+  </div>
+  <!-- Sidebar -->
+  <!-- <div class="flex flex-col w-5/12 gap-10">
+      <div class="border p-4">
+      </div>
+      <div class="border p-4">
+      </div>
+    </div> -->
+</div>
+
+{{ end }}

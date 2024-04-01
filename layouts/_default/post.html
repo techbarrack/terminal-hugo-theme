@@ -1,0 +1,40 @@
+{{ define "main" }}
+  {{ partial "header.html" . }}
+  
+  <div class="flex flex-col pt-8 gap-10">
+    <!-- Main Content-->
+    <div class="flex flex-col w-full gap-4">
+      <h2 class="text-4xl font-bold">{{ .Title }}</h2>
+      <!-- Blog Post Metadata -->
+      <div class="flex flex-row max-md:flex-col max-md:gap-4 gap-10">
+        <p>📅 {{ .Date.Format "Monday, Jan 2, 2006" }}</p>
+        <!-- Timestamp -->
+        {{ $timestamp := "2024-03-31T23:33:10+05:30" }}
+        {{ $timeParts := split $timestamp "T" }}
+        {{ $time := index $timeParts 1 }}
+        <p>⏰ {{ $time }}</p>
+        <!-- <p>Reading time: {{ .ReadingTime }}</p> -->
+      </div>
+      <!-- Authors -->
+      <div class="flex flex-row gap-2">
+        {{ partial "authors.html" . }}
+      </div>
+      <!-- Tags -->
+      <div class="flex flex-row gap-2">
+        {{ partial "tags.html" . }}
+      </div>
+      <hr />
+      <div class="prose prose-invert">
+        {{ .Content }}
+      </div>
+      
+      <div>
+        {{ partial "comments.html" . }}
+      </div>
+    </div>
+
+    {{ partial "footer_regular.html" .}}
+  </div>
+  
+{{ end }}
+
