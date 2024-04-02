@@ -1,18 +1,14 @@
 {{ define "main" }}
-{{ partial "header.html" . }}
-
-
-<div class="flex flex-col pt-8 gap-10 w-full">
-  <!-- Main Content-->
-  <div class="flex flex-col w-full gap-4">
-    <h2 class="text-4xl font-bold">{{ .Title }}</h2>
-    <div class="flex flex-col gap-4 w-full">
-      <hr />
-      {{ partial "markdown.html" . }}
+  {{ partial "header.html" . }}
+  <div class="flex flex-col pt-8 gap-10 w-full">
+    <!-- Main Content-->
+    <div class="flex flex-col w-full gap-4">
+      <h2 class="text-4xl font-bold">{{ .Title }}</h2>
+      <div class="flex flex-col gap-4 w-full">
+        <hr />
+        {{ partial "markdown.html" . }}
+      </div>
     </div>
+    {{ partial "footer_regular.html" . }}
   </div>
-  {{ partial "footer_regular.html" . }}
-</div>
-
-
 {{ end }}

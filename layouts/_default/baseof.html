@@ -7,7 +7,7 @@
 </head>
 
 <body class="bg-gradient-to-r from-slate-900 to-slate-800 font-mono text-white">
-  <div class="container mx-auto flex flex-col px-4 lg:w-8/12">
+  <div class="container mx-auto flex flex-col px-4 xl:w-8/12 sm:max-w-full">
     {{ block "main" . }}{{ end }}
   </div>
   {{ partialCached "head/js.html" . }}
