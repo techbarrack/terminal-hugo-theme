@@ -29,6 +29,12 @@ module.exports = {
   	},
     'top-0',
     'max-lg:top-0',
+    'lg:w-8/12',
+    'lg:w-9/12',
+    'lg:w-10/12',
+    'xl:w-8/12',
+    'xl:w-9/12',
+    'xl:w-10/12',
   ]
 }
 
