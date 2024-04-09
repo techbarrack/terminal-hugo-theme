@@ -24,12 +24,14 @@
         {{ partial "tags.html" . }}
       </div>
       <hr />
-      <div class="prose prose-invert">
-        {{ .Content }}
-      </div>
-      
-      <div>
-        {{ partial "comments.html" . }}
+      <div class="flex flex-col gap-10">
+        <div class="prose prose-invert">
+          {{ .Content }}
+          <hr />
+        </div>
+        <div>
+          {{ partial "comments.html" . }}
+        </div>
       </div>
     </div>
 
