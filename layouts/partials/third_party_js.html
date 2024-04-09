@@ -1,0 +1,11 @@
+<!-- Third Party Javascript -->
+{{- $partials := slice -}}
+{{- $files := readDir "layouts/partials/third_party_js" -}}
+{{- range $files -}}
+    {{- $partials = $partials | append (.Name | replaceRE "\\.html$" "") -}}
+{{- end -}}
+
+{{/* Use the list of partials in a range */}}
+{{- range $partials -}}
+    {{ partial (printf "third_party_js/%s.html" .) }}
+{{- end -}}

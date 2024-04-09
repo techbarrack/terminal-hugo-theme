@@ -24,7 +24,7 @@ https://nayanseth.com
 2. Start adding the files in `<SITE_NAME>/content` by replicating what is present in `<SITE_NAME>/themes/terminal/content`
 3. Update the meta content in `head.html`
 
-# Ads
+# Third Party JS
 
-1. Create a file in `<SITE_NAME>/layouts/partials/ads.html`
-2. Paste your Google Adsense code
+1. Create partials in `<SITE_NAME>/layouts/partials/third_party_js/<FILE>.html`
+2. All the files in `third_party_js` folder will get included before `</body>` tag
