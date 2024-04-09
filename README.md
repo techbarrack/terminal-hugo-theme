@@ -23,3 +23,8 @@ https://nayanseth.com
 1. Uncomment the ignoreFiles attribute in `<SITE_NAME>/hugo.yaml`
 2. Start adding the files in `<SITE_NAME>/content` by replicating what is present in `<SITE_NAME>/themes/terminal/content`
 3. Update the meta content in `head.html`
+
+# Ads
+
+1. Create a file in `<SITE_NAME>/layouts/partials/ads.html`
+2. Paste your Google Adsense code
