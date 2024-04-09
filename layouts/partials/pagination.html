@@ -2,7 +2,7 @@
 {{ $paginator := .Paginate ($blogPages) }}
 {{ range $paginator.Pages.GroupByDate "January 2006" }}
   <div class="flex flex-col gap-4">
-    <h2 class="text-2xl font-bold">{{ .Key }}</h2>
+    <h2 class="text-2xl font-bold">📅 {{ .Key }}</h2>
     <ul class="flex flex-col">
       {{ range .Pages.ByDate.Reverse }}
         <div class="flex flex-row justify-between border-l px-4 py-1 hover:text-sky-400">

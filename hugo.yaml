@@ -36,8 +36,8 @@ markup:
     # (enable to allow ^ and ~ for superscript and subscript)
     superscript: true
     unsafe: true
-# ignoreFiles:
-#   - "themes/terminal/content"
+ignoreFiles:
+  - "themes/terminal/content"
 # outputs:
 #   blog:
 #     - HTML
