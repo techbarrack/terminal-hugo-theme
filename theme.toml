@@ -1,17 +1,17 @@
 name = 'Terminal'
 license = 'MIT'
-licenselink = 'https://github.com/owner/repo/LICENSE'
-description = 'Theme description'
+licenselink = 'https://github.com/techbarrack/terminal-hugo-theme/blob/master/LICENSE'
+description = 'Terminal is a theme inspired by the cobalt 2 theme for terminal on macOS. It uses tailwind CSS to achieve the look and feel'
 
 # The home page of the theme, where the source can be found
-homepage = 'https://github.com/nayanseth/terminal'
+homepage = 'https://github.com/techbarrack/terminal-hugo-theme'
 
 # If you have a running demo of the theme
 demosite = 'https://nayanseth.com'
 
 # Taxonomy terms
 tags = ['blog', 'personal', 'terminal']
-features = ['search', 'markdown']
+features = ['markdown', 'blog', 'hugo', 'tailwind']
 
 # If the theme has a single author
 [author]
