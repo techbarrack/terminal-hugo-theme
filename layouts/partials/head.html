@@ -1,4 +1,11 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+<meta name="description" content="{{ .Description }}">
+<!-- Geo tags -->
+<meta name="ICBM" content="19.0760, 72.8777">
+<meta name="geo.position" content="19.0760;72.8777">
+<meta name="geo.region" content="IN-MH">
+<meta name="geo.placename" content="Mumbai">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
+
 {{ partialCached "head/css.html" . }}

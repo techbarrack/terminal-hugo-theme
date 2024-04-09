@@ -1123,6 +1123,10 @@ video {
   bottom: 0px;
 }
 
+.top-0 {
+  top: 0px;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -1356,6 +1360,10 @@ video {
   fill: #fbbf24;
 }
 
+.hover\:fill-blue-400:hover {
+  fill: #60a5fa;
+}
+
 .hover\:fill-red-600:hover {
   fill: #dc2626;
 }
@@ -1395,6 +1403,10 @@ video {
 
   .max-lg\:left-0 {
     left: 0px;
+  }
+
+  .max-lg\:top-0 {
+    top: 0px;
   }
 
   .max-lg\:h-screen {
