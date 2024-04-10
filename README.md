@@ -28,3 +28,20 @@ https://nayanseth.com
 
 1. Create partials in `<SITE_NAME>/layouts/partials/third_party_js/<FILE>.html`
 2. All the files in `third_party_js` folder will get included before `</body>` tag
+
+# References
+
+Some reference links for additional info on how to do things in Hugo:
+
+- https://gohugo.io/methods/page/
+- https://gohugo.io/methods/pages/groupbydate/
+- https://gohugo.io/content-management/taxonomies/
+- https://gohugo.io/templates/taxonomy-templates/
+- https://gohugo.io/templates/taxonomy-templates/#example-list-tags-in-a-single-page-template
+- https://gohugo.io/templates/taxonomy-templates/#example-list-tags-in-a-single-page-template
+- https://gohugo.io/methods/page/scratch/
+- https://gohugo.io/functions/collections/dictionary/
+- https://gohugo.io/methods/page/paginate/
+- https://discourse.gohugo.io/t/better-term-listing/10261
+- https://gohugo.io/templates/partials/
+- https://mertbakir.gitlab.io/hugo/pass-arguments-in-partials-hugo/
