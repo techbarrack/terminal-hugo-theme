@@ -1409,8 +1409,8 @@ video {
     top: 0px;
   }
 
-  .max-lg\:h-screen {
-    height: 100vh;
+  .max-lg\:h-\[calc\(100dvh\)\] {
+    height: calc(100dvh);
   }
 
   .max-lg\:w-full {
