@@ -1,23 +1,26 @@
-<div class="flex flex-col gap-8 pt-8">
+<div class="flex flex-col gap-4 pt-8">
   <div class="flex flex-row gap-4">
     {{ if eq .Title "Tags" }}
-      <p class="text-4xl">🏷️</p>
+      <p class="text-3xl max-sm:text-2xl">🏷️</p>
     {{ else if eq .Title "Authors" }}
-      <p class="text-4xl">👩‍💻</p>
+      <p class="text-3xl max-sm:text-2xl">👩‍💻</p>
     {{ else }}
       <!-- Default behavior if the title is neither "tags" nor "authors" -->
     {{ end }}
-    <h1 class="text-4xl font-bold">{{ .Title }}</h1>
+    <h1 class="text-3xl max-sm:text-2xl font-bold">{{ .Title }}</h1>
   </div>
-  <hr />
-  <div class="flex flex-row gap-4">
-    {{ range .Scratch.Get "taxonomy" }}
-    <div>
-      <a href="{{ .Page.Permalink }}" title="All pages with tag <i>{{ .Page.Title | lower }}</i>"
-        class="border border-sky-400 p-1 hover:bg-sky-400 focus:bg-sky-400 text-center whitespace-nowrap">{{ .Page.Title | lower }} x
-        {{
-        .Count }}</a>
+  <div class="flex flex-col gap-8">
+    <hr />
+    <div class="flex flex-row gap-4 flex-wrap">
+      {{ range .Scratch.Get "taxonomy" }}
+      <div>
+        <a href="{{ .Page.Permalink }}" title="All pages with tag <i>{{ .Page.Title | lower }}</i>"
+          class="border border-sky-400 p-1 hover:bg-sky-400 focus:bg-sky-400 text-center whitespace-nowrap">{{ .Page.Title | lower }} x
+          {{
+          .Count }}</a>
+      </div>
+      {{ end }}
     </div>
-    {{ end }}
   </div>
+  {{ partial "footer_regular.html" .}}
 </div>
