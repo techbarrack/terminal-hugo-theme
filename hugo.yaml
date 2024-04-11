@@ -38,6 +38,7 @@ markup:
     unsafe: true
 ignoreFiles:
   - "themes/terminal/content"
+  - "content/ignoredContent"
 # outputs:
 #   blog:
 #     - HTML
