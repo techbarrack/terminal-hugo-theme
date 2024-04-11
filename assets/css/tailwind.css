@@ -1409,6 +1409,10 @@ video {
     top: 0px;
   }
 
+  .max-lg\:hidden {
+    display: none;
+  }
+
   .max-lg\:h-\[calc\(100dvh\)\] {
     height: calc(100dvh);
   }
