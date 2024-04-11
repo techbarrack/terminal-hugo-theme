@@ -1152,8 +1152,8 @@ video {
   display: none;
 }
 
-.h-screen {
-  height: 100vh;
+.h-\[calc\(100dvh\)\] {
+  height: calc(100dvh);
 }
 
 .w-5\/12 {
