@@ -1,15 +1,13 @@
-+++
-title = 'Post 13'
-date = 2024-03-31T23:33:10+05:30
-draft = true
-layout = "post"
-tags = ["india","general"]
-authors = ["Nayan Seth", "John Doe"]
-[params]
-    slug = "post-13"
-    author = "Nayan Seth"
-+++
-
+---
+title: "Markdown Template"
+date: "2024-04-01T19:01:48+05:30"
+draft: true
+params:
+  slug: "markdown-template"
+layout: "post"
+tags: ["markdown","template", "demo", "example", "another tag"]
+authors: ["Nayan Seth", "John Doe", "Author 3", "Author 4", "Author 5"]
+---
 __Advertisement :)__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
