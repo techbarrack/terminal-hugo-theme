@@ -57,3 +57,4 @@ Some reference links for additional info on how to do things in Hugo:
 - https://discourse.gohugo.io/t/better-term-listing/10261
 - https://gohugo.io/templates/partials/
 - https://mertbakir.gitlab.io/hugo/pass-arguments-in-partials-hugo/
+- [SVG Icons](https://github.com/coreui/coreui-icons)
