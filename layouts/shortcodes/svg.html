@@ -1,0 +1,9 @@
+<!-- Center Aligning Template
+Markdown content can have custom CSS. Don't think we should use this
+-->
+<!-- <div class="flex flex-row gap-2 items-center justify-left">
+  {{ partial (printf "content/svg/%s" ( .Get "logo" )) . }}
+  <span>{{ .Get "text" }}</span>
+</div> -->
+
+{{ partial (printf "content/svg/%s" ( .Get "logo" )) . }}
