@@ -8,6 +8,23 @@ layout: "post"
 tags: ["markdown","template", "demo", "example", "another tag"]
 authors: ["Nayan Seth", "John Doe", "Author 3", "Author 4", "Author 5"]
 ---
+
+## SVG Testing
+
+## {{< svg logo="india" text="SVG Shortcode Test" styling="inline-block">}} SVG Shortcode Test
+
+{{< svg logo="india">}} hi testing
+
+This is some random text to test a SVG in between the text. So, keep reading through this text until you see a svg. Still don't see it? Wait for it. It is going to take a while before you see it. Waiting... Waiting... Lorem ipsum should have been used here :/. Any way, here you go {{< svg logo="india">}}. The svg is here
+
+{.flex .flex-row .items-center .justify-left .gap-2}
+
+## Raw HTML
+
+{{< rawhtml >}}
+<div>This is raw HTML content</div>
+{{< /rawhtml >}}
+
 __Advertisement :)__
 
 - __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
