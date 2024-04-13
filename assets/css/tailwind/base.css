@@ -2,3 +2,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  svg {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
