@@ -2,7 +2,7 @@
   <div>
     <a href="{{ .url }}">
       <!-- CSS don't apply when importing SVGs. Hence, using partials -->
-      {{ partial (printf "social/%s" (replace .name " " "")) . }}
+      {{ partial (printf "content/svg/%s" (replace .name " " "")) . }}
     </a>
   </div>
 {{ end }}
