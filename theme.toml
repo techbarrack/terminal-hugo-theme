@@ -1,5 +1,5 @@
 name = 'Terminal'
-license = 'Mozilla Public License Version 2.0'
+license = 'MPL-2.0'
 licenselink = 'https://github.com/techbarrack/terminal-hugo-theme/blob/master/LICENSE'
 description = 'Terminal is a theme inspired by the cobalt 2 theme for terminal on macOS. It uses tailwind CSS to achieve the look and feel'
 
