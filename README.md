@@ -29,6 +29,18 @@ https://nayanseth.com
 1. Create partials in `<SITE_NAME>/layouts/partials/third_party_js/<FILE>.html`
 2. All the files in `third_party_js` folder will get included before `</body>` tag
 
+# Shortcodes
+
+- `{{< svg logo="blah" >}}` -> Use the following code to add svg in markdown files
+		1. Add svg as .html file in `layouts/content/svg`
+- Raw HTML
+```
+{{< rawhtml >}}
+	<div>This is raw HTML content</div>
+{{< /rawhtml >}}
+```
+
+
 # References
 
 Some reference links for additional info on how to do things in Hugo:
