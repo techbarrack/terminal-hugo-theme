@@ -6,7 +6,7 @@ A theme for hugo made using tailwind CSS library and mono font family
 
 https://nayanseth.com
 
-![Theme Screenshot](https://github.com/techbarrack/terminal-hugo-theme/blob/master/images/theme_screenshot.png)
+![Theme Screenshot](https://github.com/techbarrack/terminal-hugo-theme/blob/master/images/screenshot.png)
 
 # Setup
 
