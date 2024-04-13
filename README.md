@@ -12,8 +12,8 @@ https://nayanseth.com
 
 1. This theme uses tailwind CSS
 2. There are two config files for tailwind located in `assets/csss/tailwind` directory
-		1. For dev run `npm run dev` -> This generates all the possible CSS classes from tailwind. Some may still be left out
-		2. For prod run `npm run prod` -> This generates only the CSS classes from tailwind that you are using in the theme
+	1. For dev run `npm run dev` -> This generates all the possible CSS classes from tailwind. Some may still be left out
+	2. For prod run `npm run prod` -> This generates only the CSS classes from tailwind that you are using in the theme
 3. `hugo new site <SITE_NAME>`
 4. `cd <SITE_NAME>`
 5. `git submodule add git@github.com:techbarrack/terminal-hugo-theme.git themes/terminal`
@@ -34,11 +34,11 @@ https://nayanseth.com
 # Shortcodes
 
 - `{{< svg logo="blah" >}}` -> Use the following code to add svg in markdown files
-		1. Add svg as .html file in `layouts/content/svg`
+	1. Add svg as .html file in `layouts/content/svg`
 - Raw HTML
 ```
 {{< rawhtml >}}
-	<div>This is raw HTML content</div>
+  <div>This is raw HTML content</div>
 {{< /rawhtml >}}
 ```
 
