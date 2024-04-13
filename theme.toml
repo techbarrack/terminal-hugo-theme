@@ -10,8 +10,8 @@ homepage = 'https://github.com/techbarrack/terminal-hugo-theme'
 demosite = 'https://nayanseth.com'
 
 # Taxonomy terms
-tags = ['blog', 'personal', 'terminal']
-features = ['markdown', 'blog', 'hugo', 'tailwind']
+tags = ['blog', 'personal', 'responsive', 'terminal', 'dark mode', 'minimal', 'dark']
+features = ['blog', 'personal', 'responsive', 'terminal', 'dark mode', 'minimal', 'dark', 'hugo', 'shortcodes', 'tailwind', 'markdown']
 
 # If the theme has a single author
 [author]
