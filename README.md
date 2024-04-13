@@ -11,14 +11,16 @@ https://nayanseth.com
 # Setup
 
 1. This theme uses tailwind CSS
-2. There are two config files for tailwind located in `assets/csss/tailwind` directory
-	1. For dev run `npm run dev` -> This generates all the possible CSS classes from tailwind. Some may still be left out
-	2. For prod run `npm run prod` -> This generates only the CSS classes from tailwind that you are using in the theme
-3. `hugo new site <SITE_NAME>`
-4. `cd <SITE_NAME>`
-5. `git submodule add git@github.com:techbarrack/terminal-hugo-theme.git themes/terminal`
-6. Replace the contents of `<SITE_NAME>/hugo.yaml` with `<SITE_NAME>/themes/terminal/hugo.yaml`
-7. Run the website `hugo server --buildDrafts --disableFastRender --gc --ignoreCache --noHTTPCache --forceSyncStatic --verbose -w`		
+2. [Optional] How to Use Tailwind
+   	1. By default, the existing `tailwind.css` file will be used in the theme but if you want to play around with tailwind then follow the steps mentioned below
+	2. There are two config files for tailwind located in `assets/csss/tailwind` directory
+		1. For dev run `npm run dev` -> This generates all the possible CSS classes from tailwind. Some may still be left out
+		2. For prod run `npm run prod` -> This generates only the CSS classes from tailwind that you are using in the theme
+4. `hugo new site <SITE_NAME>`
+5. `cd <SITE_NAME>`
+6. `git submodule add git@github.com:techbarrack/terminal-hugo-theme.git themes/terminal`
+7. Replace the contents of `<SITE_NAME>/hugo.yaml` with `<SITE_NAME>/themes/terminal/hugo.yaml`
+8. Run the website `hugo server --buildDrafts --disableFastRender --gc --ignoreCache --noHTTPCache --forceSyncStatic --verbose -w`		
 
 # Modifying the Contents
 
