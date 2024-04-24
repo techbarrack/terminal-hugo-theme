@@ -20,7 +20,8 @@ https://nayanseth.com
 5. `cd <SITE_NAME>`
 6. `git submodule add git@github.com:techbarrack/terminal-hugo-theme.git themes/terminal`
 7. Replace the contents of `<SITE_NAME>/hugo.yaml` with `<SITE_NAME>/themes/terminal/hugo.yaml`
-8. Run the website `hugo server --buildDrafts --disableFastRender --gc --ignoreCache --noHTTPCache --forceSyncStatic --verbose -w`		
+8. In the root directory of the hugo site, create the directory: `mkdir -p layouts/partials/third_party_js`. This directory is to store any sort of third party javascript like google analytics, disqus, etc
+10. Run the website `hugo server --buildDrafts --disableFastRender --gc --ignoreCache --noHTTPCache --forceSyncStatic --verbose -w`		
 
 # Modifying the Contents
 
