@@ -8,12 +8,11 @@
       <!-- Blog Post Metadata -->
       <div class="flex flex-row flex-wrap max-md:gap-4 gap-10">
         <p>📅 {{ .Date.Format "Monday, Jan 2, 2006" }}</p>
-        <!-- Timestamp -->
-        {{ $timestamp := "2024-03-31T23:33:10+05:30" }}
-        {{ $timeParts := split $timestamp "T" }}
-        {{ $time := index $timeParts 1 }}
-        <p>⏰ {{ $time }}</p>
-        <!-- <p>Reading time: {{ .ReadingTime }}</p> -->
+        <p>⏰ {{ .Date.Format "15:04:05" }}</p>
+        {{ with .Params.lastmod }}
+          <p>🔄 {{ .Format "Monday, Jan 2, 2006 15:04:05" }}</p>
+        {{ end }}
+        <p>📖 Reading time: {{ .ReadingTime }} min</p>
       </div>
       <!-- Authors -->
       <div class="flex flex-row gap-2 flex-nowrap">
